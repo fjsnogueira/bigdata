@@ -6,7 +6,7 @@ var express = require("express");
 
 const staticResourcesConfig = (app) => {
     app.use("/package.json", express.static("./package.json"));
-    app.use(favicon("./shared/assets/images/favicon.ico"));
+    app.use(favicon("./client/assets/images/favicon.ico"));
     express.static.mime.define({"text/css": ["css"]});
     express.static.mime.define({"application/x-font-woff": ["woff"]});
     express.static.mime.define({"application/x-font-ttf": ["ttf"]});
