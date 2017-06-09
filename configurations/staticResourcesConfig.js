@@ -5,7 +5,7 @@ var path = require("path");
 var express = require("express");
 
 const staticResourcesConfig = (app) => {
-    app.use("/fonts/", express.static(path.join(__dirname, "./shared/assets/fonts")));
+    app.use("/package.json", express.static("./package.json"));
     app.use(favicon("./shared/assets/images/favicon.ico"));
     express.static.mime.define({"text/css": ["css"]});
     express.static.mime.define({"application/x-font-woff": ["woff"]});
