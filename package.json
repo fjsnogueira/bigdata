@@ -1,0 +1,41 @@
+{
+  "name": "bigdata",
+  "version": "1.0.0",
+  "description": "minimal big data sample nodejs and mongodb web app (just an exercise)",
+  "main": "index.js",
+  "scripts": {
+    "start": "babel-node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fjsnogueira/bigdata.git"
+  },
+  "keywords": [
+    "minimal",
+    "big",
+    "data",
+    "sample",
+    "nodejs",
+    "and",
+    "mongodb",
+    "web",
+    "app",
+    "exercise"
+  ],
+  "author": "Fernando Nogueira <fjsnogueira@gmail.com> (fjsnogueira.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fjsnogueira/bigdata/issues"
+  },
+  "homepage": "https://github.com/fjsnogueira/bigdata#readme",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "mongoose": "^4.10.5"
+  },
+  "dependencies": {
+    "express": "^4.15.3",
+    "path": "^0.12.7",
+    "serve-favicon": "^2.4.3"
+  }
+}
