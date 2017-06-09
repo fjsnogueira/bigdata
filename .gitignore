@@ -1,5 +1,8 @@
 # Npm lock
 package-log.json
+.env
+server/bootstrap/data
+data/
 
 # Logs
 logs

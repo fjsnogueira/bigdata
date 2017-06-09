@@ -1,0 +1,53 @@
+<html>  
+    <head>
+        <title>BIG DATA - tiny example</title>
+        <link rel="stylesheet" href="libs/material.min.css">
+        <script src="libs/material.min.js"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <script src="libs/jquery.min.js"></script>
+        <link rel="stylesheet" href="index.css">
+        <script src="index.js"></script>
+    </head>
+    <body>
+        <div class="flex row center padding-top">
+            <div class="flex column">
+                <div class="flex row space-between"> 
+                    <form method="GET" action="">
+                        <input class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored"
+                                type="submit">
+                    </form>
+
+                    <form method="POST" action="show">
+                        <input class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+                            type="submit" name="show_action" value="show report">
+                    </form>
+                </div>             
+
+                {% for project in projects %}
+                <table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp"
+                       style="width: 100%;">
+                    <thead>
+                        <tr>
+                            <th class="mdl-data-table__cell--non-numeric">Author</th>
+                            <th>Commit</th>
+                            <th>Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for log in project.logs %}
+                        <tr>
+                            <td class="mdl-data-table__cell--non-numeric">{{ log.Author }}</td>
+                            <td>{{ log.commit }}</td>
+                            <td>{{ log.Date }}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+
+                <pre id="package_json">{{ JSON.stringify(project.commits[0], null, 4) }}</pre>
+                
+                {% endfor %}   
+            <div>
+        </div>
+    </body>
+</html>
