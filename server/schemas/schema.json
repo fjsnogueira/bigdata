@@ -1,0 +1,58 @@
+{
+    "entity": {
+        "_key": "$$ROOT##",
+        "_title": "",
+        "_description": "",
+        "_$ref": "",
+        "_default": "",
+        "_enum": "",
+        "_type": "Object",
+        "_required": false,
+        "__ID__": "$model1",
+        "_properties": [{
+            "name": {
+                "_key": "firstName",
+                "_title": "",
+                "_description": "",
+                "_$ref": "",
+                "_default": "",
+                "_enum": "",
+                "_type": "String",
+                "_required": false,
+                "__ID__": "$model2",
+                "_format": "",
+                "_fake": "name.firstName"
+            }
+        }, {
+            "": {
+                "_key": "lastName",
+                "_title": "",
+                "_description": "",
+                "_$ref": "",
+                "_default": "",
+                "_enum": "",
+                "_type": "String",
+                "_required": false,
+                "__ID__": "$model3",
+                "_format": "",
+                "_fake": "name.lastName"
+            }
+        }],
+        "_additionalProperties": [],
+        "_disallowAdditional": false,
+        "$root$": true
+    },
+    "schema": {
+        "type": "object",
+        "properties": {
+            "firstName": {
+                "type": "string",
+                "fake": "name.firstName"
+            },
+            "lastName": {
+                "type": "string",
+                "fake": "name.lastName"
+            }
+        }
+    }
+}

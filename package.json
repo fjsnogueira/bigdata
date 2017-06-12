@@ -40,6 +40,7 @@
   "dependencies": {
     "body-parser": "^1.17.2",
     "cookie-parser": "^1.4.3",
+    "cors": "^2.8.3",
     "dotenv": "^4.0.0",
     "express": "^4.15.3",
     "express-validator": "^3.2.0",
@@ -47,8 +48,10 @@
     "generate-schema": "^2.5.0",
     "jquery": "^3.2.1",
     "material-design-lite": "^1.3.0",
+    "moment": "^2.18.1",
     "mongoose": "^4.10.5",
     "morgan": "^1.8.2",
+    "multer": "^1.3.0",
     "node-git": "0.0.0",
     "path": "^0.12.7",
     "serve-favicon": "^2.4.3",

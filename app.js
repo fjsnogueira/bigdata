@@ -6,12 +6,16 @@ var cookieParser    = require('cookie-parser');
 var bodyParser      = require('body-parser');
 var dotenv          = require('dotenv').config();
 var routes          = require('./server/routes/index');
+var schema          = require('./server/routes/schema');
+var upload          = require('./server/routes/upload');
 var swig            = require('swig');
 var mongoose        = require('mongoose');
+var cors            = require('cors');
 
 mongoose.connect(process.env.MONGO_URL + process.env.MONGO_DB);
 
 var app = express();
+app.use(cors())
 
 // assign the swig view engine to .html files...
 app.engine('html', swig.renderFile);
@@ -29,6 +33,8 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'client')));
 
 app.use('/', routes);
+app.use('/schema', schema);
+app.use('/upload', upload);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
