@@ -1,0 +1,3 @@
+[submodule "JSON-Schema-Builder"]
+	path = JSON-Schema-Builder
+	url = https://github.com/fjsnogueira/JSON-Schema-Builder
