@@ -1,0 +1,17 @@
+.
+├── assets
+│   └── images
+│       └── favicon.ico
+├── client_tree.txt
+├── index.css
+├── index.js
+├── libs
+│   ├── jquery.min.js
+│   ├── material.min.css
+│   └── material.min.js
+└── views
+    ├── error.html
+    ├── index.html
+    └── new.html
+
+4 directories, 10 files

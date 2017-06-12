@@ -1,0 +1,19 @@
+.
+├── controllers
+│   └── projects.server.controller.js
+├── models
+│   └── project.server.model.js
+├── public
+│   └── uploads
+├── routes
+│   ├── index.js
+│   ├── schema.js
+│   └── upload.js
+├── routes..
+│   └── public
+│       └── uploads
+├── schemas
+│   └── schema.json
+└── server_tree.txt
+
+9 directories, 7 files

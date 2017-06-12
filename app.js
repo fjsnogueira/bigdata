@@ -31,6 +31,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'client')));
+app.use('/builder', express.static(path.join(__dirname, 'JSON-Schema-Builder/docs')));
 
 app.use('/', routes);
 app.use('/schema', schema);

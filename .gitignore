@@ -3,6 +3,8 @@ package-log.json
 .env
 server/bootstrap/data
 data/
+JSON-Schema-Builder/
+JSON-Schema-Builder2/
 
 # Logs
 logs

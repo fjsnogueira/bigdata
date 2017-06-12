@@ -12,15 +12,15 @@
         <div class="flex row center padding-top">
             <div class="flex column">
                 <div class="flex row space-between"> 
+                    <!--
                     <form method="GET" action="">
                         <input class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored"
                                 type="submit">
                     </form>
+-->
 
-                    <form method="POST" action="show">
-                        <input class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
-                            type="submit" name="show_action" value="show report">
-                    </form>
+                    <a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+                       href="builder" type="submit" name="show_action" >Builder</a>
                 </div>             
 
                 {% for project in projects %}
