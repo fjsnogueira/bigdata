@@ -3,9 +3,9 @@ minimal big data sample nodejs and mongodb web app (just an exercise)
 
 not working yet (wip)
 
-npm intall
+# install dependencies and run
 
-node ./bin/www.js
+npm intall && npm start
 
 
 map-reduce

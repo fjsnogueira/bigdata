@@ -15,7 +15,7 @@ var cors            = require('cors');
 mongoose.connect(process.env.MONGO_URL + process.env.MONGO_DB);
 
 var app = express();
-app.use(cors())
+app.use(cors());
 
 // assign the swig view engine to .html files...
 app.engine('html', swig.renderFile);
