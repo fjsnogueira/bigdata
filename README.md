@@ -9,7 +9,9 @@ node ./bin/www.js
 
 
 map-reduce
-finding number of projects by author an storing in the outCollection1
+==========
+
+way of finding number of projects by author and storing in the outCollection1 (from the mongodb shell)
 
 ```javascript
 function m () {
@@ -37,4 +39,47 @@ function r(k,v) {
 }
 
 db.projects.mapReduce(m,r,options);
+```
+
+Client file structure
+======================
+
+```
+.
+├── assets
+│   └── images
+│       └── favicon.ico
+├── index.css
+├── index.js
+├── libs
+│   ├── jquery.min.js
+│   ├── material.min.css
+│   └── material.min.js
+└── views
+    ├── error.html
+    ├── index.html
+    └── new.html
+```
+
+
+Server file structure
+======================
+
+```
+.
+├── controllers
+│   └── projects.server.controller.js
+├── models
+│   └── project.server.model.js
+├── public
+│   └── uploads
+├── routes
+│   ├── index.js
+│   ├── schema.js
+│   └── upload.js
+├── routes..
+│   └── public
+│       └── uploads
+└── schemas
+    └── schema.json
 ```
