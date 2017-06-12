@@ -5,7 +5,11 @@ not working yet (wip)
 
 # install dependencies and run
 
-npm intall && npm start
+git clone https://github.com/fjsnogueira/bigata
+cd bigata
+git clone https://github.com/fjsnogueira/JSON-Schema-Builder
+npm intall
+npm start
 
 
 map-reduce
